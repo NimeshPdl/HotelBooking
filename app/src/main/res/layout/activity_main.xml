@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:id="@+id/Name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:id="@+id/spnLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spnRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check In Date"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YYYY-MM-DD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Out Date"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YYYY-MM-DD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:text="Adults"
+            android:gravity="center"
+            android:textSize="20sp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Children" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Rooms"
+            android:layout_alignParentRight="true">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etadult"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+
+
+        <EditText
+            android:id="@+id/etchild"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:id="@+id/etroom"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="Total"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tvDays"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tvroomno"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/totalsuite"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tvtotal"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tvVat"
+
+        />
+
+
+
+</LinearLayout>
+</ScrollView>
